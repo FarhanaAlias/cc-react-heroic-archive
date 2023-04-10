@@ -52,7 +52,7 @@ export default function ViewCharacter() {
         }}
       />
       <Typography variant="h6">Appearance</Typography>
-      <Typography>{`Gender: ${appearance.gender}, Species: ${appearance.race}, Eyes: ${appearance["eye-color"]}, Hair: ${appearance["hair-color"]}`}</Typography>
+      <Typography>{`Gender: ${appearance.gender}, Species: ${appearance.race}, Eyes: ${appearance.eyeColor}, Hair: ${appearance.hairColor}`}</Typography>
       <Typography>{`Height: ${appearance.height.join(
         ", "
       )}, Weight: ${appearance.weight.join(", ")}`}</Typography>
@@ -137,7 +137,7 @@ export default function ViewCharacter() {
       <Typography>{`Base: ${work.base}`}</Typography>
       <br />
       <Typography variant="h6">Connections</Typography>
-      <Typography>{`Group Affiliation: ${connections["group-affiliation"]}`}</Typography>
+      <Typography>{`Group Affiliation: ${connections.groupAffiliation}`}</Typography>
       <Typography>{`Family: ${connections.relatives}`}</Typography>
       <Typography
         variant="h5"

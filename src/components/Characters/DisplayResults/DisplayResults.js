@@ -37,7 +37,12 @@ export default function DisplayResults() {
     return sortCharacterCards.slice(0, visibleChars).map((char) => {
       return (
         <Grid item xs={6} sm={3} md={2.4} lg={1.5} key={char.id}>
-          <CharacterCard char={char} />
+          <CharacterCard
+            char={char}
+            onClick={() => {
+              console.log("hello");
+            }}
+          />
         </Grid>
       );
     });
